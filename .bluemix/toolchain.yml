@@ -35,6 +35,7 @@ services:
           REPO: repo
           CF_APP: "{{form.pipeline.parameters.app-name}}"
           REGION_ID: "{{form.pipeline.parameters.dev-region}}"
+          PUBLIC_KEY: "{{form.pipeline.parameters.public-key}}"
         execute: true
 
   #Web IDE
