@@ -1,0 +1,3 @@
+target/CreateAppBLIRN-1.0-SNAPSHOT.jar	usr/src/CreateAppBLIRN
+terraform/scripts/install.sh	usr/src/CreateAppBLIRN
+terraform/scripts/start.sh		usr/src/CreateAppBLIRN
