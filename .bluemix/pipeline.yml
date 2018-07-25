@@ -10,7 +10,7 @@ stages:
     value: CreateAppBLIRN
     type: text
   - name: PUBLIC_KEY
-    value: "{{PUBLIC_KEY}}"
+    value: "{{public-key}}"
     type: text
   - name: PRIVATE_KEY
     value: "{{PRIVATE_KEY}}"
