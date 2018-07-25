@@ -17,11 +17,11 @@
       "type": "string"
     },
     "tf-var-ibm-sl-username": {
-      "description": "IBM SoftLayer Username",
+      "description": "SoftLayer Username",
       "type": "string"
     },
     "tf-var-ibm-sl-api-key": {
-      "description": "IBM SoftLayer API Key",
+      "description": "SoftLayer API Key",
       "type": "string"
     },
     "tf-var-ibm-cloud-api-key": {
@@ -72,28 +72,28 @@
       "key": "tf-var-ibm-cloud-api-key"
     },{
       "type": "label",
-      "title": "IBM SoftLayer Username"
+      "title": "SoftLayer Username"
     },{
       "type": "label",
-      "key": "IBM SoftLayer API Key"
+      "key": "SoftLayer API Key"
     },{
       "type": "label",
       "title": "IBM Cloud API Key"
     },{
       "type": "text",
-      "key": "tf-var-ibm-sl-username"
+      "key": "git-user"
     },{
       "type": "text",
-      "key": "tf-var-ibm-sl-api-key"
+      "key": "git-password"
     },{
       "type": "select",
       "key": "dev-region"
     },{
       "type": "label",
-      "title": "IBM SoftLayer Username"
+      "title": "Git Username"
     },{
       "type": "label",
-      "key": "IBM SoftLayer API Key"
+      "key": "Git Password"
     },{
       "type": "label",
       "title": "Region"
