@@ -29,8 +29,8 @@
     "key": "app-name"
   }, {
     "type": "table",
-    "columnCount": 1,
-    "widths": ["28%"],
+    "columnCount": 3,
+    "widths": ["28%", "28%", "28%"],
     "items": [{
       "type": "text",
       "title": "Public Key"
