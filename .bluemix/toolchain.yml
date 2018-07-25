@@ -36,6 +36,12 @@ services:
           CF_APP: "{{form.pipeline.parameters.app-name}}"
           REGION_ID: "{{form.pipeline.parameters.dev-region}}"
           PUBLIC_KEY: "{{form.pipeline.parameters.public-key}}"
+          PRIVATE_KEY: "{{form.pipeline.parameters.private-key}}"
+          TF_VAR_ibm_sl_username: "{{form.pipeline.parameters.tf-var-ibm-sl-username}}"
+          TF_VAR_ibm_sl_api_key: "{{form.pipeline.parameters.tf-var-ibm-sl-api-key}}"
+          TF_VAR_ibm_cloud_api_key: "{{form.pipeline.parameters.tf-var-ibm-cloud-api-key}}"
+          GIT_USER: "{{form.pipeline.parameters.git-user}}"
+          GIT_PASSWORD: "{{form.pipeline.parameters.git-password}}"
         execute: true
 
   #Web IDE
@@ -51,3 +57,9 @@ form:
       app-name: CreateAppBLIRN
       dev-region: "{{region}}"
       public-key: "{{public-key}}"
+      private-key: "{{private-key}}"
+      tf-var-ibm-sl-username: "{{tf-var-ibm-sl-username}}"
+      tf-var-ibm-sl-api-key: "{{tf-var-ibm-sl-api-key}}"
+      tf-var-ibm-cloud-api-key: "{{tf-var-ibm-cloud-api-key}}"
+      git-user: "{{git-user}}"
+      git-password: "{{git-password}}"

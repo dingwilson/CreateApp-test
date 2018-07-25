@@ -9,11 +9,35 @@
       "type": "string"
     },
     "public-key": {
-      "description": "public key",
+      "description": "SSH Public Key",
+      "type": "string"
+    },
+    "private-key": {
+      "description": "SSH Private Key",
+      "type": "string"
+    },
+    "tf-var-ibm-sl-username": {
+      "description": "IBM SoftLayer Username",
+      "type": "string"
+    },
+    "tf-var-ibm-sl-api-key": {
+      "description": "IBM SoftLayer API Key",
+      "type": "string"
+    },
+    "tf-var-ibm-cloud-api-key": {
+      "description": "IBM Cloud API Key",
+      "type": "string"
+    },
+    "git-user": {
+      "description": "Git Username",
+      "type": "string"
+    },
+    "git-password": {
+      "description": "Git Password",
       "type": "string"
     }
   },
-  "required": ["dev-region", "public-key"],
+  "required": ["dev-region", "public-key", "private-key", "tf-var-ibm-sl-username", "tf-var-ibm-sl-api-key", "tf-var-ibm-cloud-api-key"],
   "form": [{
     "type": "validator",
     "url": "/devops/setup/bm-helper/helper.html"
@@ -23,24 +47,56 @@
     "readonly": false,
     "title": "App Name",
     "key": "app-name"
+  },
+  {
+    "type": "text",
+    "title": "SSH Public Key",
+    "key": "public-key"   
+  },
+  {
+    "type": "text",
+    "title": "SSH Private Key",
+    "key": "private-key"   
   }, {
     "type": "table",
-    "columnCount": 2,
-    "widths": ["28%", "28%"],
+    "columnCount": 3,
+    "widths": ["28%", "28%", "28%"],
     "items": [{
       "type": "text",
-      "key": "public-key"
+      "key": "tf-var-ibm-sl-username"
+    },{
+      "type": "text",
+      "key": "tf-var-ibm-sl-api-key"
+    },{
+      "type": "select",
+      "key": "tf-var-ibm-cloud-api-key"
+    },{
+      "type": "label",
+      "title": "IBM SoftLayer Username"
+    },{
+      "type": "label",
+      "key": "IBM SoftLayer API Key"
+    },{
+      "type": "label",
+      "title": "IBM Cloud API Key"
+    },{
+      "type": "text",
+      "key": "tf-var-ibm-sl-username"
+    },{
+      "type": "text",
+      "key": "tf-var-ibm-sl-api-key"
     },{
       "type": "select",
       "key": "dev-region"
     },{
       "type": "label",
-      "title": "Public Key"
+      "title": "IBM SoftLayer Username"
+    },{
+      "type": "label",
+      "key": "IBM SoftLayer API Key"
     },{
       "type": "label",
       "title": "Region"
     }]
-
-
   }]
 }

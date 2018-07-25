@@ -13,22 +13,22 @@ stages:
     value: "${PUBLIC_KEY}"
     type: text
   - name: PRIVATE_KEY
-    value: "{{PRIVATE_KEY}}"
+    value: "${PRIVATE_KEY}"
     type: secure
   - name: TF_VAR_ibm_sl_username
-    value: "{{TF_VAR_ibm_sl_username}}"
+    value: "${TF_VAR_ibm_sl_username}"
     type: text
   - name: TF_VAR_ibm_sl_api_key
-    value: "{{TF_VAR_ibm_sl_api_key}}"
+    value: "${TF_VAR_ibm_sl_api_key}"
     type: secure
   - name: TF_VAR_ibm_cloud_api_key
-    value: "{{TF_VAR_ibm_cloud_api_key}}"
+    value: "${TF_VAR_ibm_cloud_api_key}"
     type: secure
   - name: GIT_USER
-    value: "{{GIT_USER}}"
+    value: "${GIT_USER}"
     type: text
   - name: GIT_PASSWORD
-    value: "{{GIT_PASSWORD}}"
+    value: "${GIT_PASSWORD}"
     type: secure
   jobs:
   - name: Validate
