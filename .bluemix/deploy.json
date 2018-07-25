@@ -25,20 +25,20 @@
     "key": "app-name"
   }, {
     "type": "table",
-    "columnCount": 3,
-    "widths": ["28%", "28%", "28%"],
+    "columnCount": 2,
+    "widths": ["28%", "28%"],
     "items": [{
-      "type": "label",
-      "title": "Public Key"
-    },{
       "type": "text",
       "key": "public-key"
     },{
-      "type": "label",
-      "title": "Region"
-    }, {
       "type": "select",
       "key": "dev-region"
+    },{
+      "type": "label",
+      "title": "Public Key"
+    },{
+      "type": "label",
+      "title": "Region"
     }]
 
 
