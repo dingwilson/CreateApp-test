@@ -34,9 +34,14 @@
     "items": [{
       "type": "text",
       "title": "Public Key"
+    },{
+      "type": "label",
+      "title": "Region"
     }, {
       "type": "select",
       "key": "dev-region"
     }]
+
+
   }]
 }
